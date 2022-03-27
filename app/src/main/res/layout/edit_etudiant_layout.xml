@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+ >
+
+    <ImageView
+        android:id="@+id/edit_image"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <EditText
+        android:id="@+id/idEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:hint="Nom : "
+        android:inputType="text"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="upload"
+        app:layout_constraintTop_toBottomOf="@+id/edit_image"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/edit_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Nom : "
+        android:inputType="text"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <EditText
+        android:id="@+id/edit_prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="prenom : "
+        android:inputType="text"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <Spinner
+        android:id="@+id/Edit_ville"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:entries="@array/villes"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="491dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexe :"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="535dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/something"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:text="edit"
+        android:textColor="#020202"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/delete"
+        app:layout_constraintTop_toTopOf="@+id/upload"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:text="delete"
+        android:textColor="#020202"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upload"
+        app:layout_constraintVertical_bias="0.976"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RadioButton
+        android:id="@+id/f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="femme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="578dp" />
+
+    <RadioButton
+        android:id="@+id/m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="homme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="578dp" />
+
+</LinearLayout>

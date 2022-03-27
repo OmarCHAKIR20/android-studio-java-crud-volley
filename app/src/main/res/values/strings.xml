@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">projet</string>
+    <string-array name="villes">
+        <item>"marrakech"</item>
+        <item>"casablanca"</item>
+    </string-array>
+
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
+</resources>
