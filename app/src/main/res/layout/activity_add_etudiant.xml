@@ -7,16 +7,20 @@
     android:padding="10dp"
     android:layout_height="match_parent"
   >
+
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/image"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
         app:srcCompat="@drawable/ic_launcher_foreground" />
+
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:layout_marginLeft="20dp"
         android:text="Browse Image"
         android:id="@+id/browse"/>
 
@@ -33,6 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_marginBottom="30dp"
         android:inputType="textPersonName" />
     <TextView
         android:id="@+id/textView2"
@@ -42,20 +47,21 @@
     <EditText
         android:id="@+id/prenom"
         android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
         android:layout_height="wrap_content"
         android:ems="10"
 
         android:inputType="textPersonName" />
     <TextView
         android:id="@+id/textView3"
-
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ville" />
     <Spinner
         android:id="@+id/ville"
         android:entries="@array/villes"
-
+        android:layout_marginBottom="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
@@ -68,6 +74,7 @@
         android:layout_width="match_parent"
 
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/m"
@@ -81,15 +88,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="femme" />
+
     </RadioGroup>
     <Button
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add" />
+        android:text="Ajouter" />
     <Button
         android:id="@+id/listEtudiant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="listEtudiant" />
+        android:text="liste des etudiants" />
 </LinearLayout>

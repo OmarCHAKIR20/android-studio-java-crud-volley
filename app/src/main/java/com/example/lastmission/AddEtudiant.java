@@ -68,7 +68,7 @@ public class AddEtudiant extends Activity implements View.OnClickListener {
         listEtudiant = (Button) findViewById(R.id.listEtudiant);
         m = (RadioButton) findViewById(R.id.m);
         f = (RadioButton) findViewById(R.id.f);
-        img = findViewById(R.id.img);
+        img = findViewById(R.id.image);
         add.setOnClickListener(this);
         listEtudiant.setOnClickListener(this);
         browse.setOnClickListener(this);

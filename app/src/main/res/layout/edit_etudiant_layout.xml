@@ -4,19 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-
+    android:padding="10dp"
     android:layout_height="match_parent"
- >
+    >
 
     <ImageView
         android:id="@+id/edit_image"
         android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="0dp"
+
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <EditText
@@ -29,109 +26,89 @@
         android:visibility="gone" />
 
     <Button
-        android:id="@+id/upload"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Browse Image"
+        android:id="@+id/upload"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="upload"
-        app:layout_constraintTop_toBottomOf="@+id/edit_image"
-        tools:layout_editor_absoluteX="0dp" />
-
+        android:text="Nom : " />
     <EditText
         android:id="@+id/edit_nom"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+
+        android:inputType="textPersonName" />
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:hint="Nom : "
-        android:inputType="text"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="343dp" />
+        android:text="Prenom :" />
 
     <EditText
         android:id="@+id/edit_prenom"
         android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:ems="10"
+
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView3"
+
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:hint="prenom : "
-        android:inputType="text"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="421dp" />
-
+        android:text="Ville" />
     <Spinner
         android:id="@+id/Edit_ville"
-        android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
         android:entries="@array/villes"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="491dp" />
 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/textView4"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sexe :"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="535dp" />
-
+        android:text="Sexe :"/>
     <RadioGroup
-        android:id="@+id/radioGroup"
-
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+
         android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="homme" />
+        <RadioButton
+            android:id="@+id/f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="femme" />
 
     </RadioGroup>
-
     <Button
         android:id="@+id/something"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-
-        android:text="edit"
-        android:textColor="#020202"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/delete"
-        app:layout_constraintTop_toTopOf="@+id/upload"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp" />
-
+        android:text="editer" />
     <Button
         android:id="@+id/delete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="right"
-        android:text="delete"
-        android:textColor="#020202"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/upload"
-        app:layout_constraintVertical_bias="0.976"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <RadioButton
-        android:id="@+id/f"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="femme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.245"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="578dp" />
-
-    <RadioButton
-        android:id="@+id/m"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="homme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.725"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="578dp" />
-
+        android:text="supprimer" />
 </LinearLayout>

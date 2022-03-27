@@ -110,7 +110,7 @@ public class EtudiantAdapter extends RecyclerView.Adapter<EtudiantAdapter.ViewHo
 
 
 
-                idEdit.setText(((TextView)v.findViewById(R.id.idtxt)).getText().toString());
+                idEdit.setText(((TextView)v.findViewById(R.id.idTxt)).getText().toString());
 
                 // Set Title and Message:
                 builder.setTitle("Modification").setMessage("");
@@ -235,9 +235,9 @@ public class EtudiantAdapter extends RecyclerView.Adapter<EtudiantAdapter.ViewHo
                 .load("http://192.168.1.37/projet/images/" + model.getImage())
                 .into(holder.profil);
         holder.id.setText (model.getId ()+ "" );
-        holder.fname.setText ( model.getNom () );
-        holder.lname.setText ( model.getPrenom () );
-        holder.residence.setText ( model.getVille ()+"\n" );
+        holder.fname.setText ( model.getNom ()  );
+        holder.lname.setText (model.getPrenom ()+"\n"   );
+        holder.residence.setText (model.getVille() );
 
         holder.sexe.setText(model.getSexe());
 
@@ -260,12 +260,12 @@ public class EtudiantAdapter extends RecyclerView.Adapter<EtudiantAdapter.ViewHo
 
         public ViewHolder(@NonNull View itemView) {
             super ( itemView );
-            id=itemView.findViewById ( R.id.idtxt );
+            id=itemView.findViewById ( R.id.idTxt );
             profil = itemView.findViewById(R.id.image);
             fname=itemView.findViewById ( R.id.fname );
             lname=itemView.findViewById ( R.id.lname );
            residence = itemView.findViewById(R.id.residence);
-           sexe = itemView.findViewById(R.id.sexe);
+             sexe = itemView.findViewById(R.id.sexe);
            delete = itemView.findViewById(R.id.delete);
 
         }
